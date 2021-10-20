@@ -1,0 +1,9 @@
+nav{
+    background-color:whitesmoke;
+   line-height: 40px;
+}
+.menuItem{
+text-decoration: none;
+color :black;
+padding:5px 10px
+}
