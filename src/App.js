@@ -15,13 +15,14 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Notfound from './components/Notfound/Notfound';
 
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <Menubar></Menubar>
+
         <Switch>
 
           <Route exact path='/'>
@@ -45,6 +46,9 @@ function App() {
           <PrivateRoute path='/detail/:serviceId'>
             <Detail></Detail>
           </PrivateRoute>
+          <Route path='*'>
+            <Notfound></Notfound>
+          </Route>
         </Switch >
       </Router >
     </AuthProvider>

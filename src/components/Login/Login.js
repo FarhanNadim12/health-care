@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import useAuth from '../../hooks/useAuth';
+import Menubar from '../Menubar/Menubar';
 
 
 const Login = () => {
@@ -22,6 +23,7 @@ const Login = () => {
     return (
 
         <div>
+            <Menubar></Menubar>
             <div className='form-container'>
                 <h3 className='mb-3'>Log In Here</h3>
                 <form onSubmit={handleLogIn}>

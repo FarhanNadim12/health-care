@@ -28,18 +28,19 @@ const Menubar = () => {
                         <Link to='/about' className='menuItem nav-link'>
                             <FontAwesomeIcon icon={faUsers} />  About Us</Link>
                         <Link to='/register' className='menuItem nav-link'><FontAwesomeIcon icon={faUserPlus} /> Register</Link>
-                        <Link to='/login' className='menuItem  nav-link'><FontAwesomeIcon icon={faSignInAlt} /> Log in</Link>
 
 
-
-                        {
-                            user?.email && <button className='logOutBtn' onClick={logOut}><FontAwesomeIcon icon={faSignOutAlt} />log out</button>
-                        }
 
                         {
                             user?.displayName && <FontAwesomeIcon className='mt-3 ms-3' icon={faUser} />
                         }
                         <span className='me-2 mt-1 ms-2'> {user.displayName} </span>
+                        {
+                            user?.email ? <button className='logOutBtn' onClick={logOut}><FontAwesomeIcon icon={faSignOutAlt} />log out</button> :
+                                <Link to='/login' className='menuItem  nav-link'><FontAwesomeIcon icon={faSignInAlt} /> Log in</Link>
+                        }
+
+                       
 
 
 

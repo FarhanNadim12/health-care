@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
 import Footer from '../Footer/Footer';
+import Menubar from '../Menubar/Menubar';
 
 const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
@@ -12,6 +13,7 @@ const Doctors = () => {
     console.log(doctors);
     return (
         <div>
+            <Menubar></Menubar>
             <div className='row container m-auto'>
                 <h1 className='text-center'>Our  Doctors</h1>
                 {

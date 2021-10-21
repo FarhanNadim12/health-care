@@ -5,6 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import './Register.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+import Menubar from '../Menubar/Menubar';
 
 const Register = () => {
     const { createUserWithEmail } = useAuth();
@@ -37,7 +38,7 @@ const Register = () => {
     return (
 
         <div>
-
+            <Menubar></Menubar>
             <div className='form-container'>
                 <h3 className='mb-3'>Register Here</h3>
                 <form onSubmit={handleRegistration} a>

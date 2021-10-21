@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import Menubar from '../Menubar/Menubar';
 
 
 const About = () => {
     return (
         <div >
+            <Menubar></Menubar>
             <div className='w-75 row about m-auto p-5 d-flex align-items-center pt-5 m-5 mb-5'>
                 <div className="col-md-6 col-12">
                     <img height='350px' className='w-100' src="https://media.istockphoto.com/photos/team-of-confident-medical-experts-with-protective-face-masks-picture-id1270585061?b=1&k=20&m=1270585061&s=170667a&w=0&h=tTL1tGr46jf9mhsgdEnf2jATGwJ0kF5_nhOzV-sBFBY=" alt="" />
