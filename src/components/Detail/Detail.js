@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 
 const Detail = () => {
     const { serviceId } = useParams();
@@ -8,7 +8,7 @@ const Detail = () => {
     const [foundDetail, setFoundDetail] = useState({});
 
     useEffect(() => {
-        fetch('/serviceDetail.json')
+        fetch('/ServiceDetail.json')
             .then(res => res.json())
             .then(data => setserviceDetails(data))
     }, [])
