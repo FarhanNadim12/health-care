@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
     return (
@@ -6,8 +7,9 @@ const Header = () => {
             <div className='header row d-flex align-item-center'>
                 <div className='content col-md-6  '>
                     <h1 className='mb-3'>Health <span>Point</span></h1>
-                    <h4>Highly Experienced Doctors <br /> In Your City </h4>
-                    <button>About Us</button>
+                    <h4 className='mb-3'>Highly Experienced Doctors <br /> In Your City </h4>
+
+                    <Link className='abutUs' to='/about'>About Us</Link>
                 </div>
             </div>
 

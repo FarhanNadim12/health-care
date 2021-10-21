@@ -17,13 +17,14 @@
   font-weight: 700;
 
 }
-.content button{
+.abutUs{
   border: none;
   background-color: orange;
   color:black;
   padding: 5px 15px;
   font-weight: 700;
   margin-top: 5px;
+  text-decoration: none;
 
 }
 .content button:hover{

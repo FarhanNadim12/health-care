@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Register.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
 const Register = () => {
     const { createUserWithEmail } = useAuth();
@@ -45,8 +48,8 @@ const Register = () => {
                     <input type="submit" value="Register" />
                 </form>
                 <div>---------Or-------</div>
-                <button onClick={signinUsingGoogle} className='googleSignin'>Register With Google</button>
-                <p>Already Registered?? <Link to='/login'>Log In</Link> </p>
+                <button onClick={signinUsingGoogle} className='googleSignin'><FontAwesomeIcon icon={faGooglePlusG} /> Sign In With Google</button>
+                <p>Hey Already Registered?? <Link to='/login'>Log In</Link> </p>
                 <p className='text-danger'>{error}</p>
             </div>
 
